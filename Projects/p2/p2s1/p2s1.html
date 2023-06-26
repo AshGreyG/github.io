@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>基于MBTI的理想恋爱路径分析</title>
+        <link rel="stylesheet"
+        href="p2s1-style.css">
+        <link rel="stylesheet"
+        href="../../../Module-Sheets/basicStyle.css">
+        <link rel="icon"
+        href="../../../Module-Images/favicon.ico"
+        type="image/x-icon"/>
+        <link rel="stylesheet"
+        href="../../../Module-Sheets/topNavBar.css">
+        <link rel="stylesheet"
+        href="../../../Module-Sheets/markedContent.css">
+        <link rel="stylesheet"
+        href="../../../Module-Sheets/titleContent.css">
+        <link rel="stylesheet"
+        href="../../../Module-Sheets/sideNavBar.css">
+    </head>
+    <body>
+        <div class="topNavBar">
+            <ul>
+                <li class="topNavBarList"><a href="../../../index.html">首页</a></li>
+                <li class="topNavBarList"><a href="../../../ConUpdate/con.html">内容更新</a></li>
+                <li class="topNavBarList"><a href="../../../CodeUpdate/code.html">代码更新</a></li>
+                <li class="topNavBarList"><a href="../../../Babel/babel.html">知识</a></li>
+                <li class="topNavBarList"><a href="../../../Projects/projects.html">项目</a></li>
+                <li class="topNavBarList"><a href="../../../Thinkings/thinkings.html">思考</a></li>
+            </ul>
+        </div>
+        <div class="titleContent">
+            <h1>基于MBTI的理想恋爱路径分析-问卷部分</h1>
+        </div>
+        <div class="firstRow">
+            <object data="../../../Module-Images/writeDown.svg" type="image/svg+xml"></object>
+            <p>发表于2023.5.31|    |</p>
+            <object data="../../../Module-Images/update.svg" type="image/svg+xml"></object>
+            <p>更新于2023.5.31</p>
+        </div>
+        <div class="secondRow">
+            <object data="../../../Module-Images/knowledgeWeb.svg" type="image/svg+xml"></object>
+            <p>项目二-子项目一</p>
+        </div>
+
+        <div class="sideNavBarBox">
+        <div class="sideNavBar">
+            <div class="selfIntro">
+                <div class="introImage"><img src="../../../Module-Images/sagiri.jpg" alt="AshGrey"></div>
+                <div class="introContent">
+                    <h2>AshGrey</h2>
+                    <p>Love Sagiri🍭🍭🍭</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="contentBox">
+        <div class="contentCard">
+        <div id="markedContent">
+            <blockquote>
+                <p>本内容在未来更新的可能性较小, 其中某些信息可能已经过时</p>
+            </blockquote>
+            <ol> 
+                <li> 
+                    <p class="required">您的MBTI</p>      
+                    <input type="text"  required="true" >
+                </li>
+                <br>
+                <li>
+                    <p class="required">年龄</p>
+                    <input type="number" required="true">
+                </li>
+                <br>
+                <li>
+                    <fieldset>
+                        <legend class="optional">您的生理性别</legend>
+                        <div>
+                            <input type="radio" id="male" name="BioGender" value="male" />
+                            <label for="male">男</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="BioGender" value="female" />
+                            <label for="female">女</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="BioGender" value="other">
+                            <label for="other">其他</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <br>
+                <li>
+                    <fieldset>
+                        <legend class="required">您的心理性别</legend>
+                        <div>
+                            <input type="radio" id="male" name="BioGender" value="male" />
+                            <label for="male">男</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="BioGender" value="female" />
+                            <label for="female">女</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="BioGender" value="other">
+                            <label for="other">其他</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <br>
+                <li>
+                    <ul id="dragList" class="dragList">
+                        <li class="dragContent" id="drag_1">
+                            <div class="textContent">
+                                <p>1.相识后的第一次聊天(线上线下均可)</p>
+                            </div>
+                            <div class="timeNode">
+                                <p>这个事件对你来说理想的发生时间</p>
+                                <input type="number" class="numberContent" id="node-year-1">年
+                                <input type="number" class="numberContent" id="node-month-1">月
+                                <input type="number" class="numberContent" id="node-day-1">日
+                            </div>
+                            <div class="timeInterval">
+                                <p>这个事件对你来说可以接受的发生时间</p>
+                                <input type="number" class="numberContent" id="interval-left-year-1">年
+                                <input type="number" class="numberContent" id="interval-left-month-1">月
+                                <input type="number" class="numberContent" id="interval-left-day-1">日
+                                -------
+                                <input type="number" class="numberContent" id="interval-right-year-1">年
+                                <input type="number" class="numberContent" id="interval-right-month-1">月
+                                <input type="number" class="numberContent" id="interval-right-day-1">日
+                            </div>
+                        </li>
+                    
+                        <li class="dragContent" id="drag_2">
+                            <div class="textContent">
+                                <p>2.聊天主要围绕学习、工作的一些内容或者生活中发生的趣事展开</p>
+                            </div>
+                            <div class="timeNode">
+                                <p>这个事件对你来说理想的发生时间</p>
+                                <input type="number" class="numberContent" id="node-year-2">年
+                                <input type="number" class="numberContent" id="node-month-2">月
+                                <input type="number" class="numberContent" id="node-day-2">日
+                            </div>
+                            <div class="timeInterval">
+                                <p>这个事件对你来说可以接受的发生时间</p>
+                                <input type="number" class="numberContent" id="interval-left-year-2">年
+                                <input type="number" class="numberContent" id="interval-left-month-2">月
+                                <input type="number" class="numberContent" id="interval-left-day-2">日
+                                -------
+                                <input type="number" class="numberContent" id="interval-right-year-2">年
+                                <input type="number" class="numberContent" id="interval-right-month-2">月
+                                <input type="number" class="numberContent" id="interval-right-day-2">日
+                            </div>
+                        </li>
+
+                        <li class="dragContent" id="drag_3">
+                            <div class="textContent">
+                                <p>3.线下相遇时能做到相互迅速认出对方并且能够聊上几句</p>
+                            </div>
+                            <div class="timeNode">
+                                <p>这个事件对你来说理想的发生时间</p>
+                                <input type="number" class="numberContent" id="node-year-3">年
+                                <input type="number" class="numberContent" id="node-month-3">月
+                                <input type="number" class="numberContent" id="node-day-3">日
+                            </div>
+                            <div class="timeInterval">
+                                <p>这个事件对你来说可以接受的发生时间</p>
+                                <input type="number" class="numberContent" id="interval-left-year-3">年
+                                <input type="number" class="numberContent" id="interval-left-month-3">月
+                                <input type="number" class="numberContent" id="interval-left-day-3">日
+                                -------
+                                <input type="number" class="numberContent" id="interval-right-year-3">年
+                                <input type="number" class="numberContent" id="interval-right-month-3">月
+                                <input type="number" class="numberContent" id="interval-right-day-3">日
+                            </div>
+                        </li>
+
+                        <li>4.聊天主题深入，转变为音乐、电影、文学作品等与个人欣赏相关的事物</li>
+                        <li>5.朋友圈或动态有点赞、评论等互动</li>
+                        <li>6.线下相遇时对方的眼神时不时转向你(能感受到对方在意你)</li>
+                        <li>7.你们线上的聊天开始变得有些暧昧</li>
+                        <li>8.聊天主题继续深入，开始探讨恋爱观、价值观、人生观以及一些哲学问题</li>
+                        <li>9.线下相遇聊天时双方非常快乐、神采奕奕，眼神变得有些暧昧</li>
+                        <li>10.线下聊天时偶有肢体接触，并且双方都没有表现出厌恶的情绪</li>
+                        <li>11.在一些特定的日子(你的生日、圣诞节、春节等)对方送给你了具有意义的礼物</li>
+                        <li>12.双方开始有模糊邀约(不是真正的约会邀请，只是能体现出邀约的倾向)</li>
+                        <li>13.你们线上的聊天变得非常暧昧，有一种恋人未满的感觉</li>
+                        <li>14.有一方主动提出约会邀请，并且另一方欣然答应</li>
+                        <li>15.肢体接触升级，发展成为拥抱甚至牵手</li>
+                        <li>16.表白并建立恋爱关系</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="Drag.js"></script>
+    </body>
+</html>

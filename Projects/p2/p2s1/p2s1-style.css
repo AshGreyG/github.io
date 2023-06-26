@@ -1,0 +1,55 @@
+p.required::before {
+    content: "*";
+    color: red;
+}
+
+legend.required::before {
+    content: "*" ;
+    color: red ;
+}
+
+
+.dragList{
+    list-style-type: none;
+}
+
+.dragContent{
+    margin-top: 30px;
+}
+
+/*
+.dragList{
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.dragContent>li{
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    width: 1000px;
+    padding: 0 10px;
+}
+*/
+
+.numberContent {
+    width: 40px;
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+}
+
+.timeNode{
+    margin-top: 10px;
+}
+
+.timeInterval{
+    margin-top: 10px;
+}
+
+
+
+
