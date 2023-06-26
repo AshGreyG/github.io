@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'LXGWWenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+.homePage{
+    text-align: center;
+}
+
+.homePageTitle{
+    color: rgb(255, 239, 216);
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    font-size: 50px;
+    margin-top: 330px;
+    margin-bottom: 330px;
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'LXGW WenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+
+.siteInfo{
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoList{
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    height: 25px;
+    width: 150px;
+    font-family: 'LXGW WenKai-Bold' , sans-serif;
+    font-size: 3px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.infoList > a{
+    text-decoration: none;
+    overflow-wrap: break-word;
+    background-color: transparent;
+}
+
+.infoList > a:link:hover{
+    color: #fff;
+}
+
+.infoList > a:visited:hover{
+    color: #fff;
+}

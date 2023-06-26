@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'LXGWWenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+.cardList .cardContent{
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+    background: rgba(255,255,255,0.01);
+    width: 820px;
+    min-height: 120px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.4);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.5);
+}
+
+.cardContentImage img{
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+    border-right: solid 10px rgb(255, 239, 216);
+    height: 120px;
+    min-width: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    filter: grayscale(20%) saturate(90%) brightness(90%);
+}
+
+.cardContentText{
+    width: 510px;
+    text-align: center;
+}
+
+.cardContentText-Title{
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.cardContentText-Title a{
+    text-decoration: none;
+}
+
+.cardContentText-Row{
+    color: #fff;
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cardContentText-Row object{
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+}

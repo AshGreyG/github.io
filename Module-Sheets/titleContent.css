@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'LXGWWenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+.titleContent{
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    justify-content: center;
+}
+
+.firstRow{
+    margin-top: 10px;
+    color: #fff;
+    display: flex;
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    font-size: medium;
+    justify-content: center;
+}
+
+.secondRow{
+    margin-top: 10px;
+    color: #fff;
+    display: flex;
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+    font-size: medium;
+    justify-content: center;
+}
+
+object{
+    margin-top: 3px;
+    max-height: 16px;
+    max-height: 16px;
+}

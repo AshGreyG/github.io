@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'LXGWWenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'consola';
+    src: url('../Module-Fonts/consola.ttf') format('truetype');
+}
+
+.contentBox {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.contentBox .contentCard{
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+    background: rgba(255,255,255,0.01);
+    width: 820px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.5);
+}
+
+div#markedContent{
+    float: left;
+    color: #fff;
+    margin: 40px;
+    position: relative;
+    font-family: 'LXGWWenKai-Bold', sans-serif;
+}
+
+.itemContent{
+    float: left;
+    position: relative;
+    margin: 40px;
+}
+
+div#markedContent blockquote{
+    display: block;
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    border-left: 5px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.3);
+    border-radius: 3px;
+}
+
+div#markedContent blockquote>p{
+    margin-left: 7px;
+}
+
+div#markedContent li{
+    margin-left: 30px;
+}
+
+.markedContent h1,h2,h3,h4,h5,h6{
+    color: rgb(255, 239, 216);
+}
+
+/*代码块语法高亮与字体设置*/
+
+div#markedContent pre{
+    background: rgba(32, 32, 32, 0.6);
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-word;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+div#markedContent code{
+    font-family: 'consola', sans-serif;
+}
+
+div#markedContent table th{
+    border-bottom: 2px solid;
+    padding: 4px;
+}
+
+div#markedContent table td{
+    border-bottom: 1px solid;
+    padding: 4px;
+}
+

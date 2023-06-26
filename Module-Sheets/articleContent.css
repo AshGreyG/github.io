@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'LXGWWenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+.sideNavBarBox{
+    display: flex;
+    position: fixed;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.sideNavBarBox .sideNavBar{      
+    margin-top: 40px;
+    margin-left: 1150px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    position: fixed;
+    background: rgba(17, 17, 17, 0.381);
+    width: 300px;
+    min-height: 300px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.5);
+}
+
+.catalog-h2 {
+	margin-left: 1em;
+}
+.catalog-h3 {
+	margin-left: 2em;
+}
+.catalog-h4 {
+	margin-left: 3em;
+}
+.catalog-h5 {
+	margin-left: 4em;
+}
+.catalog-h6 {
+	margin-left: 5em;
+}

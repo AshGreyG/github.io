@@ -1,0 +1,88 @@
+/*顶部导航栏样式设置*/
+
+/*使导航栏条与浏览器窗口边缘无间隙*/
+@font-face {
+    font-family: 'LXGW WenKai-Bold';
+    src: url('../Module-Fonts/LXGWWenKai-Bold.ttf') format('truetype');
+}
+
+/*设置导航栏条*/
+.topNavBar{
+    height: 50px;
+    background-color: #333;
+    box-shadow: 0 1px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*设置导航栏中元素的样式*/
+.topNavBarList{
+    text-decoration: none !important;
+    list-style: none !important;
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'LXGW WenKai-Bold' , sans-serif;
+    font-size: large;
+}
+
+/*
+
+.topNavBar object#left_1 {
+    min-width: 30px;
+    min-height: 30px;
+    display: none;
+    cursor: pointer;
+    margin-right: 200px;
+}
+
+.topNavBar object#right_1 {
+    min-width: 30px;
+    min-height: 30px;
+    display: none;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+*/
+
+/*设置导航栏元素超链接的颜色为白色*/
+.topNavBarList a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+/*设置光标悬浮在超链接上方时背景颜色变深*/
+.topNavBarList a:hover{
+    background-color: #222;
+}
+
+/*
+@media (max-width: 992px) {
+    .topNavBar{
+        height: 50px;
+        background-color: #333;
+        box-shadow: 0 1px 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topNavBarList{
+        display: none;
+    }
+
+    .topNavBar object#left_1,object#right_1{
+        display: flex;
+    }
+    .topNavBar object#right_1,object#left_1{
+        display: flex;
+    }
+}
+*/
+
+
+
