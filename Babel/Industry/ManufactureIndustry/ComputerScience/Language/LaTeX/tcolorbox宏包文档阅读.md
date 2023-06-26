@@ -145,6 +145,7 @@ This is a \textbf{tcolorbox}
 <br>
 
 |Subtitle类的属性及其值的类型|描述|
+|:---:|:---:|
 |\tcbsubtitle[<options>]{\<text\>}|使用该命令，副标题栏所在的是一个新的盒子，标题内容是\<text\>中的值|
 |subtitle style=\<options\>|设计副标题栏及其盒子的样式，当使用\tcbsubtitle调用时使用该样式|
 
@@ -184,6 +185,7 @@ Further text.
 <br>
 
 |Upper Part类的属性及其值的类型|描述|
+|:---:|:---:|
 |upperbox=\<mode\>|upperbox可选值有visible和invisible两个，visible指upperbox及其样式均可见，invisible指upperbox及其样式均不可见。注意该命令将盒子分为上下两个部分，其中upperbox是强制的，lowerbox是可选的|
 |visible|直接设置upperbox、lowerbox和titlebox及其样式均可见|
 |invisible|直接设置upperbox、lowerbox和titlebox及其样式均不可见|
