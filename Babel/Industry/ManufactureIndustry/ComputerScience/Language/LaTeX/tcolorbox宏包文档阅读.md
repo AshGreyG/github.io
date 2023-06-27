@@ -8,7 +8,7 @@
 
 tcolorbox的使用方法为；
 
-``` latex
+``` LaTeX
 \begin{tcolorbox}[<options>]
     <environment content>
 \end{tcolorbox}
@@ -43,7 +43,7 @@ tcolorbox的使用方法为；
 
 以上命令的一些例子：
 
-``` latex
+``` LaTeX
 %\tcbset
 \tcbset{
     colframe    = blue!50!back,
@@ -116,7 +116,9 @@ More text.
 
 <br>
 
-``` latex
+以上命令的一些例子：
+
+``` LaTeX
 %title=<text>
 \begin{tcolorbox}[title=Theorem-1.1]
 This is a thorem.
@@ -151,7 +153,9 @@ This is a \textbf{tcolorbox}
 
 <br>
 
-``` latex
+以上命令的一些例子：
+
+``` LaTeX
 %\tcbsubtitle[<options>]{<text>}
 \begin{tcolorbox}[title=My title,
     colback=red!5!white,
@@ -193,7 +197,9 @@ Further text.
 
 <br>
 
-``` latex
+以上命令的一些例子：
+
+``` LaTeX
 %saveto=<file name>
 \begin{tcolorbox}[saveto=\jobname_mysave2.tex]
 This is a \textbf{tcolorbox}.
@@ -220,7 +226,65 @@ Now, we load the saved text:\\
 |:---:|:---:|
 |lowerbox=\<mode\>|lowerbox可选值有visible和invisible两个，visible指lowerbox及其样式均可见，invisible指lowerbox及其样式均不可见。|
 |savelowerto=\<file name\>|将一个盒子中lowerbox的文本封装起来以便之后继续使用，封装之后可以使用命令\input调用|
-|lower seperated=true/false|
+|lower seperated=true/false|该值设置为true时上下部分的分隔线显示，该值设置为false时上下部分的分隔线不显示。且该命令影响一些视觉效果设置，如竖式排布(sidebyside)和渐变(beamer)|
+|savedelimiter=\<name\>|用于连接新定义的tcolorbox环境和可选选项savelowerto，且\<name\>的值必须与新定义的tcolorbox环境名称相同，注意在环境定义中只能使用\tcolorbox与\endtcolorbox而不是\begin{tcolorbox}和\end{tcolorbox}，可以使用\newtcolorbox简化新的环境定义|
+
+<br>
+
+以上命令的一些例子：
+
+``` LaTeX
+%savedelimiter=<name>
+\newenvironment{mybox}[1]{
+    \tcolorbox[savedelimiter=mybox,
+    savelowerto=\jobname_bspsave2.tex,lowerbox=ignored,
+    colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,
+    title=#1]}
+    {\endtcolorbox}
+
+\begin{mybox}{My Example}
+    Upper part.
+    \tcblower
+    Saved lower part!
+\end{mybox}
+
+Now, the saved part is used:
+
+\begin{tcolorbox}[colback=green!5]
+    \input{\jobname_bspsave2.tex}
+\end{tcolorbox}
+```
+
+<br>
+
+### 2.5 Colors and Fonts
+
+<br>
+
+|Colors类的属性及其值的类型|描述|
+|:---:|:---:|
+|colframe=\<color\>|设置盒子边框的颜色|
+|colback=\<color\>|设置盒子背景的颜色|
+|title filled=true\|false|设置标题栏背景是否填充颜色，这个值在设置colbacktitle、opacitybacktitle、title style和title code时自动设置为true，设置为false时颜色与边框相同|
+|colbacktitle=\<color\>|设置标题栏背景的颜色|
+|colupper=\<color\>|设置上半部分文本的字体颜色|
+|collower=\<color\>|设置下半部分文本的字体颜色|
+|coltext=\<color\>|设置盒子内所有文本的字体颜色|
+|coltitle=\<color\>|设置标题文本的字体颜色|
+
+<br>
+
+|Fonts类的属性及其值的类型|描述|
+|:---:|:---:|
+|fontupper=\<text\>|设置上半部分内容前的文本内容及上半部分某些文本的字体属性(大小、可用字体)|
+|fontlower=\<text\>|设置下半部分内容前的文本内容及下半部分某些文本的字体属性(大小、可用字体)|
+|fonttitle=\<text\>|设置标题前的文本内容及标题的字体属性(大小、可用字体)
+
+<br>
+
+### 2.6 Text Alignment
+
+<br>
 
 
 
